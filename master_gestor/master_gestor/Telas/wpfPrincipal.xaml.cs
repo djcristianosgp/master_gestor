@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace master_gestor
+namespace master_gestor.Telas
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Lógica interna para wpfPrincipal.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class wpfPrincipal : Window
     {
-        public MainWindow()
+        public wpfPrincipal()
         {
             InitializeComponent();
         }

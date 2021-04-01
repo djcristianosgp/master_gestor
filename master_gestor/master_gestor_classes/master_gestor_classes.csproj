@@ -45,6 +45,7 @@
     <Compile Include="Classes\clsAtualizacao_Arquivos.cs" />
     <Compile Include="Classes\clsAtualizacao_Banco.cs" />
     <Compile Include="Classes\clsBanco.cs" />
+    <Compile Include="Classes\clsConfiguracao.cs" />
     <Compile Include="Classes\clsVeiculo.cs" />
     <Compile Include="Classes\clsFornecedor.cs" />
     <Compile Include="Classes\clsGrupo.cs" />
