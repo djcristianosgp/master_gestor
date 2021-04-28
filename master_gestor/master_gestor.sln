@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "master_gestor_classes", "ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestor", "Gestor\Gestor.csproj", "{FF690D75-8F95-4AE9-8DF9-E8EE67F9E75D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-gestor", "e-gestor\e-gestor.csproj", "{148A7C8F-06BA-4693-9D7F-7914BDA64CA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FF690D75-8F95-4AE9-8DF9-E8EE67F9E75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF690D75-8F95-4AE9-8DF9-E8EE67F9E75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF690D75-8F95-4AE9-8DF9-E8EE67F9E75D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{148A7C8F-06BA-4693-9D7F-7914BDA64CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{148A7C8F-06BA-4693-9D7F-7914BDA64CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{148A7C8F-06BA-4693-9D7F-7914BDA64CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{148A7C8F-06BA-4693-9D7F-7914BDA64CA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
