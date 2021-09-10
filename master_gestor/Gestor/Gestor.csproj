@@ -82,6 +82,9 @@
   <ItemGroup>
     <Compile Include="Classes\clsBanco.cs" />
     <Compile Include="Classes\clsScripts.cs" />
+    <Compile Include="GestorControles\GestorChekBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Telas\frmConsDiversa.cs">

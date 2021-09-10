@@ -33,15 +33,15 @@
             this.miConfiguracao = new System.Windows.Forms.ToolStripMenuItem();
             this.miSair = new System.Windows.Forms.ToolStripMenuItem();
             this.muContasReceber = new System.Windows.Forms.ToolStripMenuItem();
-            this.miContasPagar = new System.Windows.Forms.ToolStripMenuItem();
             this.miCadCliente = new System.Windows.Forms.ToolStripMenuItem();
-            this.miCadFornecedor = new System.Windows.Forms.ToolStripMenuItem();
             this.miLancReceitaCli = new System.Windows.Forms.ToolStripMenuItem();
-            this.miLancDespesaFor = new System.Windows.Forms.ToolStripMenuItem();
             this.miBaixaPrestaCli = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipoReceitaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miContasPagar = new System.Windows.Forms.ToolStripMenuItem();
+            this.miCadFornecedor = new System.Windows.Forms.ToolStripMenuItem();
+            this.miLancDespesaFor = new System.Windows.Forms.ToolStripMenuItem();
             this.miBaixaPagamento = new System.Windows.Forms.ToolStripMenuItem();
             this.miCadTipoDespesa = new System.Windows.Forms.ToolStripMenuItem();
-            this.tipoReceitaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.muVeiculos = new System.Windows.Forms.ToolStripMenuItem();
             this.miCadVeiculos = new System.Windows.Forms.ToolStripMenuItem();
             this.miCompraVeiculos = new System.Windows.Forms.ToolStripMenuItem();
@@ -77,13 +77,13 @@
             // miConfiguracao
             // 
             this.miConfiguracao.Name = "miConfiguracao";
-            this.miConfiguracao.Size = new System.Drawing.Size(180, 22);
+            this.miConfiguracao.Size = new System.Drawing.Size(154, 22);
             this.miConfiguracao.Text = "Configuração ";
             // 
             // miSair
             // 
             this.miSair.Name = "miSair";
-            this.miSair.Size = new System.Drawing.Size(180, 22);
+            this.miSair.Size = new System.Drawing.Size(154, 22);
             this.miSair.Text = "Sair";
             // 
             // muContasReceber
@@ -97,6 +97,30 @@
             this.muContasReceber.Size = new System.Drawing.Size(119, 20);
             this.muContasReceber.Text = "Contas a Receber";
             // 
+            // miCadCliente
+            // 
+            this.miCadCliente.Name = "miCadCliente";
+            this.miCadCliente.Size = new System.Drawing.Size(209, 22);
+            this.miCadCliente.Text = "Cadastro de Cliente";
+            // 
+            // miLancReceitaCli
+            // 
+            this.miLancReceitaCli.Name = "miLancReceitaCli";
+            this.miLancReceitaCli.Size = new System.Drawing.Size(209, 22);
+            this.miLancReceitaCli.Text = "Lançamento de Receita";
+            // 
+            // miBaixaPrestaCli
+            // 
+            this.miBaixaPrestaCli.Name = "miBaixaPrestaCli";
+            this.miBaixaPrestaCli.Size = new System.Drawing.Size(209, 22);
+            this.miBaixaPrestaCli.Text = "Baixa de Presastações";
+            // 
+            // tipoReceitaToolStripMenuItem
+            // 
+            this.tipoReceitaToolStripMenuItem.Name = "tipoReceitaToolStripMenuItem";
+            this.tipoReceitaToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.tipoReceitaToolStripMenuItem.Text = "Tipo Receita";
+            // 
             // miContasPagar
             // 
             this.miContasPagar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -108,35 +132,18 @@
             this.miContasPagar.Size = new System.Drawing.Size(106, 20);
             this.miContasPagar.Text = "Contas a Pagar";
             // 
-            // miCadCliente
-            // 
-            this.miCadCliente.Name = "miCadCliente";
-            this.miCadCliente.Size = new System.Drawing.Size(209, 22);
-            this.miCadCliente.Text = "Cadastro de Cliente";
-            // 
             // miCadFornecedor
             // 
             this.miCadFornecedor.Name = "miCadFornecedor";
             this.miCadFornecedor.Size = new System.Drawing.Size(213, 22);
             this.miCadFornecedor.Text = "Cadastro de Fornecedor";
             // 
-            // miLancReceitaCli
-            // 
-            this.miLancReceitaCli.Name = "miLancReceitaCli";
-            this.miLancReceitaCli.Size = new System.Drawing.Size(209, 22);
-            this.miLancReceitaCli.Text = "Lançamento de Receita";
-            // 
             // miLancDespesaFor
             // 
             this.miLancDespesaFor.Name = "miLancDespesaFor";
             this.miLancDespesaFor.Size = new System.Drawing.Size(213, 22);
             this.miLancDespesaFor.Text = "Lancamento de Despesa";
-            // 
-            // miBaixaPrestaCli
-            // 
-            this.miBaixaPrestaCli.Name = "miBaixaPrestaCli";
-            this.miBaixaPrestaCli.Size = new System.Drawing.Size(209, 22);
-            this.miBaixaPrestaCli.Text = "Baixa de Presastações";
+            this.miLancDespesaFor.Click += new System.EventHandler(this.miLancDespesaFor_Click);
             // 
             // miBaixaPagamento
             // 
@@ -149,12 +156,6 @@
             this.miCadTipoDespesa.Name = "miCadTipoDespesa";
             this.miCadTipoDespesa.Size = new System.Drawing.Size(213, 22);
             this.miCadTipoDespesa.Text = "Tipos de Despesa";
-            // 
-            // tipoReceitaToolStripMenuItem
-            // 
-            this.tipoReceitaToolStripMenuItem.Name = "tipoReceitaToolStripMenuItem";
-            this.tipoReceitaToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.tipoReceitaToolStripMenuItem.Text = "Tipo Receita";
             // 
             // muVeiculos
             // 
@@ -209,6 +210,7 @@
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestor";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.mnPrincipal.ResumeLayout(false);
             this.mnPrincipal.PerformLayout();

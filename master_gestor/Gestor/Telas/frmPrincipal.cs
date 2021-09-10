@@ -32,5 +32,12 @@ namespace Gestor.Telas
                 clsScripts.ExecutaAtualizacao();
             }
         }
+
+        private void miLancDespesaFor_Click(object sender, EventArgs e)
+        {
+            frmLanDespesa FormDespesa = new frmLanDespesa();
+            FormDespesa.MdiParent = this;
+            FormDespesa.Show();
+        }
     }
 }
